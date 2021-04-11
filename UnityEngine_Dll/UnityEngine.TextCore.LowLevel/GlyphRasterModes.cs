@@ -1,0 +1,22 @@
+using System;
+
+namespace UnityEngine.TextCore.LowLevel
+{
+	[Flags]
+	internal enum GlyphRasterModes
+	{
+		RASTER_MODE_8BIT = 1,
+		RASTER_MODE_MONO = 2,
+		RASTER_MODE_NO_HINTING = 4,
+		RASTER_MODE_HINTED = 8,
+		RASTER_MODE_BITMAP = 16,
+		RASTER_MODE_SDF = 32,
+		RASTER_MODE_SDFAA = 64,
+		RASTER_MODE_MSDF = 256,
+		RASTER_MODE_MSDFA = 512,
+		RASTER_MODE_1X = 4096,
+		RASTER_MODE_8X = 8192,
+		RASTER_MODE_16X = 16384,
+		RASTER_MODE_32X = 32768
+	}
+}
