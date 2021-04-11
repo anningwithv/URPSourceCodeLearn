@@ -5,3 +5,17 @@ URPSourceCodeLearn/Temp/
 URPSourceCodeLearn/Assembly-CSharp.csproj
 URPSourceCodeLearn/.vsconfig
 URPSourceCodeLearn/URPSourceCodeLearn.sln
+URPSourceCodeLearn/Unity.RenderPipelines.Core.Runtime.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.Core.Editor.csproj
+URPSourceCodeLearn/Unity.ShaderGraph.Editor.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.Universal.Shaders.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.Universal.Runtime.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.Universal.Editor.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj
+URPSourceCodeLearn/Unity.RenderPipeline.Universal.ShaderLibrary.csproj
+URPSourceCodeLearn/Unity.ShaderGraph.Utilities.csproj
+URPSourceCodeLearn/Unity.RenderPipelines.Core.ShaderLibrary.csproj
+URPSourceCodeLearn/Logs/AssetImportWorker0-prev.log
+URPSourceCodeLearn/Logs/
+UnityEngine_Dll/.vs/
+URPSourceCodeLearn/Assembly-CSharp-Editor.csproj
