@@ -16,14 +16,14 @@ namespace UnityEngine.Rendering.Universal.Internal
         internal RenderTextureDescriptor descriptor { get; private set; }
 
         FilteringSettings m_FilteringSettings;
-        ShaderTagId m_ShaderTagId = new ShaderTagId("DepthOnly");
+        ShaderTagId m_ShaderTagId = new ShaderTagId("DepthOnly");//∂‘”¶shader÷–Tags{"LightMode" = "DepthOnly"}
 
         /// <summary>
         /// Create the DepthOnlyPass
         /// </summary>
         public DepthOnlyPass(RenderPassEvent evt, RenderQueueRange renderQueueRange, LayerMask layerMask)
         {
-            base.profilingSampler = new ProfilingSampler(nameof(DepthOnlyPass) + "dddddd");
+            base.profilingSampler = new ProfilingSampler(nameof(DepthOnlyPass));
             m_FilteringSettings = new FilteringSettings(renderQueueRange, layerMask);
             renderPassEvent = evt;
         }
