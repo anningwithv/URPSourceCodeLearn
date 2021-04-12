@@ -12,6 +12,7 @@ namespace UnityEngine.Rendering.Universal
     {
         [SerializeField] LayerMask m_OpaqueLayerMask = -1;
         [SerializeField] LayerMask m_TransparentLayerMask = -1;
+        [SerializeField] RenderTexture m_OutputTexture = null;
 
         public LayerMask opaqueLayerMask
         {
@@ -21,6 +22,11 @@ namespace UnityEngine.Rendering.Universal
                 SetDirty();
                 m_OpaqueLayerMask = value;
             }
+        }
+
+        public RenderTexture OutputTexture
+        {
+            get => m_OutputTexture;
         }
 
 #if UNITY_EDITOR

@@ -13,17 +13,18 @@ namespace UnityEngine.Rendering.Universal
             public static readonly GUIContent FilteringLabel = new GUIContent("Filtering", "Controls filter rendering settings for this renderer.");
             public static readonly GUIContent OpaqueMask = new GUIContent("Opaque Layer Mask", "Controls which opaque layers this renderer draws.");
             public static readonly GUIContent TransparentMask = new GUIContent("Transparent Layer Mask", "Controls which transparent layers this renderer draws.");
-
+            public static readonly GUIContent OutputTexture = new GUIContent("Output Texture", "");
         }
 
         SerializedProperty m_OpaqueLayerMask;
         SerializedProperty m_TransparentLayerMask;
-
+        SerializedProperty m_OutputTexture;
 
         private void OnEnable()
         {
             m_OpaqueLayerMask = serializedObject.FindProperty("m_OpaqueLayerMask");
             m_TransparentLayerMask = serializedObject.FindProperty("m_TransparentLayerMask");
+            m_OutputTexture = serializedObject.FindProperty("m_OutputTexture");
         }
 
         public override void OnInspectorGUI()
@@ -36,6 +37,11 @@ namespace UnityEngine.Rendering.Universal
             EditorGUILayout.PropertyField(m_TransparentLayerMask, Styles.TransparentMask);
             EditorGUI.indentLevel--;
             EditorGUILayout.Space();
+
+            //EditorGUI.indentLevel++;
+            //EditorGUILayout.PropertyField(m_OutputTexture, Styles.OutputTexture);
+            //EditorGUI.indentLevel--;
+            //EditorGUILayout.Space();
 
             serializedObject.ApplyModifiedProperties();
 
